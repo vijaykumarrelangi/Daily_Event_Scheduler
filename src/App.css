@@ -1,0 +1,184 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Full-screen gradient background with smooth shift */
+body {
+  background: radial-gradient(circle, #0f2027, #203a43, #2c5364);
+  background-size: 200% 200%;
+  animation: gradientShift 12s infinite;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gradient shifting animation */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphic card container */
+.container {
+  width: 500px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Header with gradient text */
+h1 {
+  text-align: center;
+  font-size: 32px;
+  background: linear-gradient(to right, #43cea2, #185a9d);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
+}
+
+/* Form with glowing inputs */
+form {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #43cea2;
+  box-shadow: 0 0 10px #43cea2;
+  outline: none;
+}
+
+/* Button with gradient and hover animation */
+button {
+  padding: 12px 18px;
+  background: linear-gradient(45deg, #43cea2, #185a9d);
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px #43cea2;
+}
+
+/* Error message with a subtle pulse animation */
+.error-message {
+  color: #ff6b6b;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Events List Style */
+.events-list {
+  list-style: none; /* Remove default bullet points */
+  padding: 0;
+  margin-top: 10px;
+}
+
+/* List Item Styles */
+.events-list li {
+  background: rgba(255, 255, 255, 0.1); /* Frosted glass effect */
+  backdrop-filter: blur(5px); /* Blur background for depth */
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between; /* Align items in a row */
+  align-items: center; /* Center items vertically */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for list items */
+.events-list li:hover {
+  transform: translateY(-3px); /* Lift effect on hover */
+  background: rgba(67, 206, 162, 0.3); /* Light background on hover */
+}
+
+/* Event Icon Style (optional) */
+.event-icon {
+  margin-right: 10px; /* Spacing between icon and text */
+  font-size: 20px; /* Icon size */
+  color: #43cea2; /* Icon color */
+}
+
+/* Event Text Style */
+.events-list span {
+  color: #d9e3f0; /* Event text color */
+  font-weight: 500; /* Slightly bold text */
+  font-size: 18px; /* Text size */
+}
+
+/* Event Time Style */
+.event-time {
+  font-weight: 400; /* Regular weight for time */
+  color: #a0c4ff; /* Soft blue for time */
+  font-size: 16px; /* Slightly smaller font size */
+}
+
+/* Delete Button for Events */
+.delete-button {
+  background: transparent; /* Transparent background */
+  border: none; /* No border */
+  color: #ff6b6b; /* Delete button color */
+  cursor: pointer; /* Pointer on hover */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.delete-button:hover {
+  color: #ff4040; /* Darker red on hover */
+}
+/* src/App.css */
+
+/* Other existing styles ... */
+
+h2 {
+  font-size: 24px;                  
+  color: #43cea2;
+  margin: 20px ;                 
+  padding: 10px;      
+  letter-spacing: 1px;           
+  transition: color 0.3s ease;   
+}
+
+h2:hover {
+  color:#43cea2;                
+}
