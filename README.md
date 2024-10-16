@@ -1,10 +1,7 @@
  # Daily Event Scheduler
  
-Here is a sample README.md file for your Daily Event Scheduler project:
+The Daily Event Scheduler is a simple web application designed to help users manage their daily events efficiently. Users can create, view, update, and delete events with non-overlapping time slots to ensure smooth scheduling.
 
- # Daily Event Scheduler
-
-- The Daily Event Scheduler is a simple web application designed to help users manage their daily events efficiently. Users can create, view, update, and delete events with non-overlapping time slots to ensure smooth scheduling.
  ---
 ### Features
 - Create Events: Add events with a name, description, date, and time.
